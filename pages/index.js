@@ -7,7 +7,7 @@ import { makeUrl, filterPosts } from '../src/utils/content'
 import CONFIG from '../content/index.json'
 import SUMMARY_JSON from '../content/summary.json'
 
-function Index(props) {
+function Index (props) {
   return (
     <div>
       <Page
@@ -24,10 +24,10 @@ function Index(props) {
   )
 }
 
-function Body(props) {
+function Body (props) {
   const postList = filterPosts(props.summaryJson)
   return (
-    <div className="center mw6 pa3 pa4-ns">
+    <div className='center mw6 pa3 pa4-ns'>
       {postList.map((article, i) => {
         const href = makeUrl(article)
         const date = formatDate(article.date)

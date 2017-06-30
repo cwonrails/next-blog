@@ -5,7 +5,7 @@ import Hero from './Hero'
 import Footer from './Footer'
 import Tracking from './Tracking'
 
-function Page(props) {
+function Page (props) {
   return (
     <div>
       <Header
@@ -13,7 +13,7 @@ function Page(props) {
         description={props.description}
         stylesheets={props.stylesheets}
       />
-      <main className="lh-copy">
+      <main className='lh-copy'>
         <Hero
           siteTitle={props.siteTitle}
           subtitle={props.description}
@@ -37,7 +37,7 @@ Page.propTypes = {
   description: PropTypes.string.isRequired,
   stylesheets: PropTypes.array,
   topLinks: PropTypes.array,
-  siteId: PropTypes.string.isRequired,
+  siteId: PropTypes.string.isRequired
 }
 
 Page.defaultProps = {
@@ -46,7 +46,7 @@ Page.defaultProps = {
   stylesheets: [
     'https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css'
   ],
-  backgroundClass: 'bg-dark-gray',
+  backgroundClass: 'bg-dark-gray'
 }
 
 export default Page

@@ -1,7 +1,7 @@
 const SUMMARY_JSON = require('./content/summary.json')
 
 module.exports = {
-  exportPathMap: function() {
+  exportPathMap: function () {
     const posts = {}
     SUMMARY_JSON.fileMap && Object.keys(SUMMARY_JSON.fileMap)
       .forEach((file) => {

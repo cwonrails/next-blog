@@ -12,7 +12,7 @@ function getGaScript (siteId) {
 `
 }
 
-function Tracking(props) {
+function Tracking (props) {
   return (
     <div>
       <script dangerouslySetInnerHTML={{ __html: getGaScript(props.siteId) }} />
@@ -21,7 +21,7 @@ function Tracking(props) {
 }
 
 Tracking.propTypes = {
-  siteId: PropTypes.string.isRequired,
+  siteId: PropTypes.string.isRequired
 }
 
 export default Tracking

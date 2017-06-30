@@ -6,7 +6,7 @@ import { formatDate } from '../src/utils/date'
 import CONFIG from '../content/index.json'
 import SUMMARY_JSON from '../content/summary.json'
 
-function Index(props) {
+function Index (props) {
   let pageJson
   if (props.url.query) {
     pageJson = require(`../content${props.url.query.fullUrl}.json`)
@@ -49,11 +49,11 @@ function Index(props) {
   )
 }
 
-function Body(props) {
+function Body (props) {
   return (
-    <div className="content center mw6 pa3 pa4-ns">
-      <h1 className="mt0 lh-title">{props.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: props.bodyHtml }}></div>
+    <div className='content center mw6 pa3 pa4-ns'>
+      <h1 className='mt0 lh-title'>{props.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: props.bodyHtml }} />
     </div>
   )
 }

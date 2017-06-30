@@ -9,7 +9,7 @@ const handle = app.getRequestHandler()
 
 const rootStaticFiles = [
   '/favicon.ico',
-  '/assets',
+  '/assets'
 ]
 
 app.prepare()
